@@ -4,9 +4,9 @@ Opdateret 15. oktober 2026 · Version 2.0.1
 
 ## Indhold
 
-- [Hvorfor bruge Markdown?](#Hvorfor\ bruge\ Markdown?)
-- [Hvad er Markdown?](#Hvad er Markdown?)
-- [[Grundlæggende syntaks]][Hvad er Markdown?](#Grundlæggende syntaks)
+- [[#Hvorfor bruge Markdown?]]
+- [[#Hvad er Markdown?]]
+- [[#Grundlæggende syntaks]]
   - [[#Overskrifter – Headings]]
   - [[#Fed skrift – Bold]]
   - [[#Kursiv – Italic]]
@@ -44,12 +44,12 @@ Opdateret 15. oktober 2026 · Version 2.0.1
 - [[#Præsentation og filformater]]
 - [[#Kildehenvisninger]]
 
-Indholdsfortegnelsen og links tilbage til den bruger **Obsidian-wikilinks**, eksempelvis `[[#Indhold]]`. De kræver en renderer, der understøtter denne syntaks. Almindelige Markdown-links til overskrifter kan bruges i stedet, men overskriftens linkmål afhænger af rendereren.
+Indholdsfortegnelsen og links tilbage til den bruger **Obsidian-wikilinks**, eksempelvis `[Indhold](#indhold)`. De kræver en renderer, der understøtter denne syntaks. Almindelige Markdown-links til overskrifter kan bruges i stedet, men overskriftens linkmål afhænger af rendereren.
 
 ## Hvorfor bruge Markdown?
 
-[[#Indhold]]
-[Indhold](#Indhold)
+[Indhold](#indhold)
+
 Dette dokument giver en generel introduktion til **Markdown (`filnavn.md`)** og kan bruges som opslagsværk i undervisningen.
 
 ---
@@ -81,7 +81,7 @@ Dokumentet er ikke udtømmende. Først gennemgås syntaksen. Derefter forklares 
 
 ## Hvad er Markdown?
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 Markdown er et letvægts-markupformat, der gør det muligt at tilføje struktur og enkel formatering til almindelig tekst.
 
@@ -97,13 +97,13 @@ Opdelingen i grundlæggende og udvidet syntaks nedenfor er praktisk. Den er ikke
 
 ## Grundlæggende syntaks
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 Følgende elementer understøttes bredt. Benævnelserne er ofte på engelsk. Eksemplerne viser syntaksen som kode, så markeringerne også kan ses i en formateret visning.
 
 ### Overskrifter – Headings
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 Markdown understøtter seks overskriftsniveauer. Skriv et mellemrum efter `#`-tegnene:
 
@@ -120,7 +120,7 @@ Brug niveauerne til at vise dokumentets struktur. En underoverskrift bør passe 
 
 ### Fed skrift – Bold
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 Syntaks: `**fed tekst**`
 
@@ -128,7 +128,7 @@ Resultat: **fed tekst**
 
 ### Kursiv – Italic
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 Syntaks: `*kursiv tekst*`
 
@@ -136,7 +136,7 @@ Resultat: *kursiv tekst*
 
 ### Citatblok – Blockquote
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 ```markdown
 > Dette er et citat.
@@ -146,7 +146,7 @@ Resultat: *kursiv tekst*
 
 ### Nummereret liste – Ordered List
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 ```markdown
 1. Første element
@@ -160,7 +160,7 @@ Resultat: *kursiv tekst*
 
 ### Unummereret liste – Unordered List
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 ```markdown
 - Første element
@@ -174,7 +174,7 @@ Resultat: *kursiv tekst*
 
 ### Kode i en tekstlinje – Inline Code
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 Sæt en backtick på hver side af teksten:
 
@@ -188,7 +188,7 @@ Backticks er særligt nyttige til filnavne, kommandoer og korte kodeeksempler.
 
 ### Kode i en tekstlinje – Inline Code med Placeholder notation
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 Sæt en `< og >`  på hver side af teksten:
 
@@ -218,7 +218,7 @@ Konventionerne varierer, så vejledningens egen forklaring gælder.
 
 ### Afgrænset kodeblok – Fenced Code Block
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 En kodeblok kan afgrænses med tre backticks. Angiv eventuelt sproget eller dataformatet efter de første tre backticks:
 
@@ -236,7 +236,7 @@ Det viste indhold er gyldig **JSON**, som er et dataformat. Markeringen `json` g
 
 ### Vandret skillelinje – Horizontal Rule
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 Skriv mindst tre bindestreger på en separat linje. Brug en tom linje før og efter, så eksemplet er tydeligt afgrænset:
 
@@ -252,7 +252,7 @@ Tekst efter skillelinjen.
 
 ### Links
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 ```markdown
 [Markdown Guide](https://www.markdownguide.org)
@@ -262,7 +262,7 @@ Resultat: [Markdown Guide](https://www.markdownguide.org)
 
 ### Billeder
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 ```markdown
 ![Morsetaste](./Attachments/Morsetaste.jpg)
@@ -294,13 +294,13 @@ Her angives bredden til 250 pixels, og højden tilpasses forholdsmæssigt. Denne
 
 ## Udvidet syntaks og HTML
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 Følgende muligheder afhænger af Markdown-varianten eller programmet. HTML kan bruges i mange renderere, men tilladte elementer, attributter og CSS varierer. Understøttelse af eksempelvis `<sub>` betyder ikke nødvendigvis, at alle HTML-styles tillades.
 
 ### Tabel – Table
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 Tabeller med lodrette streger understøttes blandt andet af GFM og Obsidian:
 
@@ -320,7 +320,7 @@ Hvis en celle skal indeholde selve tegnet `|`, skrives det som `\|` i tabellens 
 
 ### Fodnote – Footnote
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 Fodnoter understøttes blandt andet af Obsidian og flere andre Markdown-miljøer, men er ikke en del af CommonMarks kernesyntaks:
 
@@ -336,7 +336,7 @@ Her er en sætning med en fodnote.[^1]
 
 ### ID på en overskrift – Heading ID
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 Nogle renderere, eksempelvis Pandoc med den relevante udvidelse, understøtter et eksplicit ID på en overskrift:
 
@@ -350,7 +350,7 @@ Syntaksen `{#custom-id}` understøttes ikke universelt. Mange programmer oprette
 
 ### Definitionsliste – Definition List
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 Nogle renderere, eksempelvis Pandoc med den relevante udvidelse, understøtter definitionslister:
 
@@ -363,7 +363,7 @@ Dette er ikke CommonMark- eller GFM-kernesyntaks. Kontroller, om din renderer un
 
 ### Gennemstreget tekst – Strikethrough
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 Syntaks: `~~Denne tekst er gennemstreget.~~`
 
@@ -373,7 +373,7 @@ Gennemstregning understøttes blandt andet af GFM og Obsidian.
 
 ### Opgaveliste – Task List
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 ```markdown
 - [x] Opret dokumentet
@@ -389,7 +389,7 @@ Opgavelister understøttes blandt andet af GFM og Obsidian. Om afkrydsningsfelte
 
 ### Emoji
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 Du kan indsætte et emoji direkte som tekst: 😂
 
@@ -397,7 +397,7 @@ Det kræver ikke særlig Markdown-syntaks. Visningen afhænger blandt andet af s
 
 ### Fremhævning i Obsidian
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 Syntaks: `Dette er ==vigtige ord==.`
 
@@ -405,7 +405,7 @@ I Obsidian fremhæves ordene mellem de dobbelte lighedstegn. Syntaksen er ikke e
 
 ### Fremhævning i Visual Studio Code
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 Udvidelsen [Mark Highlighter](https://marketplace.visualstudio.com/items?itemName=DaCodeKid.vscode-mark-highlighter) kan fremhæve `==markeret tekst==` i **kodeeditoren**.
 
@@ -413,7 +413,7 @@ Fremhævning i editoren og fremhævning i Markdown-forhåndsvisningen er to fors
 
 ### Sænket skrift – Subscript
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 I renderere, som tillader de relevante HTML-elementer, kan du skrive:
 
@@ -425,7 +425,7 @@ Resultat: H<sub>2</sub>O.
 
 ### Hævet skrift – Superscript
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 ```html
 x<sup>2</sup>
@@ -435,7 +435,7 @@ Resultat i en renderer med HTML-understøttelse: x<sup>2</sup>.
 
 ### Markeret tekst med HTML
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 Hvis rendereren tillader HTML og inline-CSS, kan tekstfarve og baggrund eksempelvis angives sådan:
 
@@ -448,7 +448,7 @@ Det forældede `<font>`-element bør ikke bruges. Brug CSS som i eksemplet. Farv
 
 ### Sideskift ved eksport
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 Markdown har ikke en universel sideskiftkommando. Ved udskrivning eller PDF-eksport fra en HTML-baseret renderer kan følgende virke, hvis programmet tillader HTML og respekterer CSS-reglen:
 
@@ -462,7 +462,7 @@ Indsæt en tom linje efter HTML-blokken, før du fortsætter med Markdown. Sides
 
 ## Lidt historie
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 Udveksling af information elektronisk er ikke så enkelt, som man umiddelbart skulle tro.
 
@@ -506,7 +506,7 @@ Det er netop dette problem, som tegnkodninger forsøger at løse.
 
 ## Fjernskrivere og telex
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 [Video om en fjernskriver](https://youtu.be/KrzJqC_RtSU?t=50)
 
@@ -522,7 +522,7 @@ Tankegangen er stadig relevant i moderne datakommunikation: transmissionskapacit
 
 ## ITA2 – en 5-bit-tegnkodning
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 [Video om en fjernskriver med klokkesignal](https://www.youtube.com/shorts/C2GdPW10leE)
 
@@ -584,7 +584,7 @@ ITA2 er et godt eksempel på en tidlig tegnkodning, hvor et bestemt bitmønster 
 
 ## ASCII – en 7-bit-tegnkodning
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 Senere opstod behovet for en tegnkodning med plads til flere tegn og kontrolfunktioner. En vigtig standard blev **ASCII**, som står for **American Standard Code for Information Interchange**.
 
@@ -596,7 +596,7 @@ ASCII indeholder derfor koder fra **0 til 127**.
 
 ### ASCII-kontroltegn – kode 0–31 og 127
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 ASCII indeholder kontroltegn, som oprindeligt blev anvendt til blandt andet terminaler, fjernskrivere og kommunikationsudstyr.
 
@@ -642,7 +642,7 @@ Tabellen bruger syv binære cifre. **DEC**, **OCT**, **HEX** og **BIN** betyder 
 
 ### Udskrivbare ASCII-tegn – kode 32–126
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 ASCII-koderne **32–126** er de udskrivbare tegn, inklusive mellemrum. De omfatter cifrene `0–9`, bogstaverne `A–Z` og `a–z` samt tegnsætning og andre symboler. Kode **127** er kontroltegnet `DEL` og er derfor placeret i den foregående tabel.
 
@@ -758,7 +758,7 @@ Som en byte på otte bit kan samme værdi skrives `01000001`. Det ekstra indlede
 
 ## 8-bit-codepages og udvidet ASCII
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 ASCII har 128 mulige værdier. Efterhånden som computere blev udbredt internationalt, opstod der behov for flere tegn end dem, der fandtes i ASCII.
 
@@ -770,7 +770,7 @@ Det betyder, at byteværdien eksempelvis `0x80` ikke nødvendigvis repræsentere
 
 ### Windows-1252
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 Tabellen viser den øvre halvdel af **Windows-1252 (CP1252)**. Den nedre halvdel, værdierne 0–127, svarer til ASCII. Windows-1252 har især været anvendt til vesteuropæiske sprog i Microsoft Windows.
 
@@ -913,7 +913,7 @@ HTML-browsere kan fejlrette nogle ældre numeriske referencer i området 128–1
 
 ### Fra codepages til Unicode
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 Et program skal vide, **hvilken tegnkodning en byteværdi skal fortolkes med**. Bitmønstret `11101000` fortæller derfor ikke i sig selv, hvilket tegn der menes.
 
@@ -923,7 +923,7 @@ Moderne systemer anvender i vid udstrækning Unicode, ofte kodet som UTF-8. Det 
 
 ## Præsentation og filformater
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 At repræsentere tegn er én problemstilling. At bestemme, **hvordan teksten skal præsenteres**, er en anden.
 
@@ -948,7 +948,7 @@ Markdown har færre layoutmuligheder end eksempelvis Word eller HTML med CSS. Ti
 
 ## Kildehenvisninger
 
-[[#Indhold]]
+[Indhold](#indhold)
 
 Følgende kilder dokumenterer syntaksen og de centrale tekniske oplysninger:
 
