@@ -49,7 +49,7 @@ Indholdsfortegnelsen og links tilbage til den bruger **Obsidian-wikilinks**, eks
 ## Hvorfor bruge Markdown?
 
 [[#Indhold]]
-
+[Indhold](#Indhold)
 Dette dokument giver en generel introduktion til **Markdown (`filnavn.md`)** og kan bruges som opslagsværk i undervisningen.
 
 ---
