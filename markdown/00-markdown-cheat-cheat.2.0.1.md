@@ -4,7 +4,7 @@ Opdateret 15. oktober 2026 · Version 2.0.1
 
 ## Indhold
 
-- [Hvorfor bruge Markdown?](#Hvorfor bruge Markdown?)
+- [Hvorfor bruge Markdown?](#Hvorfor\ bruge\ Markdown?)
 - [Hvad er Markdown?](#Hvad er Markdown?)
 - [[Grundlæggende syntaks]][Hvad er Markdown?](#Grundlæggende syntaks)
   - [[#Overskrifter – Headings]]
