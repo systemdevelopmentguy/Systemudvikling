@@ -4,47 +4,48 @@ Opdateret 15. oktober 2026 · Version 2.0.1
 
 ## Indhold
 
-- [[#Hvorfor bruge Markdown?]]
-- [[#Hvad er Markdown?]]
-- [[#Grundlæggende syntaks]]
-  - [[#Overskrifter – Headings]]
-  - [[#Fed skrift – Bold]]
-  - [[#Kursiv – Italic]]
-  - [[#Citatblok – Blockquote]]
-  - [[#Nummereret liste – Ordered List]]
-  - [[#Unummereret liste – Unordered List]]
-  - [[#Kode i en tekstlinje – Inline Code]]
-  - [[#Afgrænset kodeblok – Fenced Code Block]]
-  - [[#Vandret skillelinje – Horizontal Rule]]
-  - [[#Links]]
-  - [[#Billeder]]
-- [[#Udvidet syntaks og HTML]]
-  - [[#Tabel – Table]]
-  - [[#Fodnote – Footnote]]
-  - [[#ID på en overskrift – Heading ID]]
-  - [[#Definitionsliste – Definition List]]
-  - [[#Gennemstreget tekst – Strikethrough]]
-  - [[#Opgaveliste – Task List]]
-  - [[#Emoji]]
-  - [[#Fremhævning i Obsidian]]
-  - [[#Fremhævning i Visual Studio Code]]
-  - [[#Sænket skrift – Subscript]]
-  - [[#Hævet skrift – Superscript]]
-  - [[#Markeret tekst med HTML]]
-  - [[#Sideskift ved eksport]]
-- [[#Lidt historie]]
-- [[#Fjernskrivere og telex]]
-- [[#ITA2 – en 5-bit-tegnkodning]]
-- [[#ASCII – en 7-bit-tegnkodning]]
-  - [[#ASCII-kontroltegn – kode 0–31 og 127]]
-  - [[#Udskrivbare ASCII-tegn – kode 32–126]]
-- [[#8-bit-codepages og udvidet ASCII]]
-  - [[#Windows-1252]]
-  - [[#Fra codepages til Unicode]]
-- [[#Præsentation og filformater]]
-- [[#Kildehenvisninger]]
+- [Hvorfor bruge Markdown?](#hvorfor-bruge-markdown)
+- [Hvad er Markdown?](#hvad-er-markdown)
+- [Grundlæggende syntaks](#grundlæggende-syntaks)
+  - [Overskrifter – Headings](#overskrifter--headings)
+  - [Fed skrift – Bold](#fed-skrift--bold)
+  - [Kursiv – Italic](#kursiv--italic)
+  - [Citatblok – Blockquote](#citatblok--blockquote)
+  - [Nummereret liste – Ordered List](#nummereret-liste--ordered-list)
+  - [Unummereret liste – Unordered List](#unummereret-liste--unordered-list)
+  - [Kode i en tekstlinje – Inline Code](#kode-i-en-tekstlinje--inline-code)
+  - [Kode i en tekstlinje – Inline Code med Placeholder notation](#kode-i-en-tekstlinje--inline-code-med-placeholder-notation)
+  - [Afgrænset kodeblok – Fenced Code Block](#afgrænset-kodeblok--fenced-code-block)
+  - [Vandret skillelinje – Horizontal Rule](#vandret-skillelinje--horizontal-rule)
+  - [Links](#links)
+  - [Billeder](#billeder)
+- [Udvidet syntaks og HTML](#udvidet-syntaks-og-html)
+  - [Tabel – Table](#tabel--table)
+  - [Fodnote – Footnote](#fodnote--footnote)
+  - [ID på en overskrift – Heading ID](#id-på-en-overskrift--heading-id)
+  - [Definitionsliste – Definition List](#definitionsliste--definition-list)
+  - [Gennemstreget tekst – Strikethrough](#gennemstreget-tekst--strikethrough)
+  - [Opgaveliste – Task List](#opgaveliste--task-list)
+  - [Emoji](#emoji)
+  - [Fremhævning i Obsidian](#fremhævning-i-obsidian)
+  - [Fremhævning i Visual Studio Code](#fremhævning-i-visual-studio-code)
+  - [Sænket skrift – Subscript](#sænket-skrift--subscript)
+  - [Hævet skrift – Superscript](#hævet-skrift--superscript)
+  - [Markeret tekst med HTML](#markeret-tekst-med-html)
+  - [Sideskift ved eksport](#sideskift-ved-eksport)
+- [Lidt historie](#lidt-historie)
+- [Fjernskrivere og telex](#fjernskrivere-og-telex)
+- [ITA2 – en 5-bit-tegnkodning](#ita2--en-5-bit-tegnkodning)
+- [ASCII – en 7-bit-tegnkodning](#ascii--en-7-bit-tegnkodning)
+  - [ASCII-kontroltegn – kode 0–31 og 127](#ascii-kontroltegn--kode-031-og-127)
+  - [Udskrivbare ASCII-tegn – kode 32–126](#udskrivbare-ascii-tegn--kode-32126)
+- [8-bit-codepages og udvidet ASCII](#8-bit-codepages-og-udvidet-ascii)
+  - [Windows-1252](#windows-1252)
+  - [Fra codepages til Unicode](#fra-codepages-til-unicode)
+- [Præsentation og filformater](#præsentation-og-filformater)
+- [Kildehenvisninger](#kildehenvisninger)
 
-Indholdsfortegnelsen og links tilbage til den bruger **Obsidian-wikilinks**, eksempelvis `[Indhold](#indhold)`. De kræver en renderer, der understøtter denne syntaks. Almindelige Markdown-links til overskrifter kan bruges i stedet, men overskriftens linkmål afhænger af rendereren.
+Indholdsfortegnelsen og links tilbage til den bruger almindelige Markdown-links til overskrifter, eksempelvis `[Indhold](#indhold)`. Linkmålene følger GitHubs konvention for automatisk genererede overskrifts-ID'er. Andre Markdown-renderere kan bruge andre konventioner.
 
 ## Hvorfor bruge Markdown?
 
@@ -190,15 +191,15 @@ Backticks er særligt nyttige til filnavne, kommandoer og korte kodeeksempler.
 
 [Indhold](#indhold)
 
-Sæt en `< og >`  på hver side af teksten:
+Sæt vinkelparenteserne `<` og `>` omkring den del, der skal erstattes. Brug backticks omkring hele eksemplet, så vinkelparenteserne vises som tekst:
 
 ```markdown
-Gem dokumentet som <filnavn>.md`.
+Gem dokumentet som `<filnavn>.md`.
 ```
 
-Resultat: Gem dokumentet som `filnavn.md`.
+Resultat: Gem dokumentet som `<filnavn>.md`.
 
-Placeholder notation er særligt nyttige til filnavne, kommandoer og korte kodeeksempler.
+Dette kaldes pladsholdernotation (engelsk: placeholder notation). Erstat `<filnavn>` med det ønskede navn, eksempelvis `noter`, så filnavnet bliver `noter.md`.
 
 | Sammenhæng                         | Eksempel                    | Betydning                                                                |
 | ---------------------------------- | --------------------------- | ------------------------------------------------------------------------ |
@@ -980,5 +981,3 @@ Supplerende kilder og materiale fra den oprindelige udgave:
 - [ASCII Code](https://www.ascii-code.com/).
 - Wikipedia: [Telegraph code](https://en.wikipedia.org/wiki/Telegraph_code), [American Morse code](https://en.wikipedia.org/wiki/American_Morse_code), [Morse code](https://en.wikipedia.org/wiki/Morse_code) og [Telegrafi](https://da.wikipedia.org/wiki/Telegrafi).
 - Videoer: [Telegraf](https://www.youtube.com/shorts/9DCP4TMYg_M), [fjernskriver](https://youtu.be/KrzJqC_RtSU) og [klokkesignal](https://www.youtube.com/shorts/C2GdPW10leE).
-
-
